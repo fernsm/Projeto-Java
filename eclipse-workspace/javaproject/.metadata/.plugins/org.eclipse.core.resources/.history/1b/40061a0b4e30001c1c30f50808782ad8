@@ -1,0 +1,17 @@
+package br.com.infox.telas;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
+public class Redimensionar {
+
+	
+	public ImageIcon redimensionar(JLabel jLabel, int xLargura, int yAltura){
+	       
+        ImageIcon img = new ImageIcon (jLabel.getIcon().toString());  
+        img.setImage(img.getImage().getScaledInstance(xLargura, yAltura, 100));
+       
+        return img;
+	
+	}
+}
